@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#이조상>div {
+    padding-left: 50px;
+}
+
+#이조상>div.이지만>div {
+    padding-left: 50px;
+}
+
+#이조상 .이하윤 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0px solid green;
+    background-color: darkturquoise;
+}
+
+#이조상>.이서윤 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0px solid rebeccapurple;
+    background-color: lightgreen;
+
+}
+
+#이조상>.이서윤>div.이소아 {
+    padding-left: 50px;
+    border: 0px solid blueviolet;
+    background-color: lightblue;
+}
+
+#이조상>.이서윤>div.이지호 {
+    padding-left: 50px;
+    border: 0px solid brown;
+    background-color: burlywood;
+}
+
+
+
+#이조상 .이지만 {
+    border: 0px solid red;
+    background-color: chocolate;
+}
+
+#이조상 .이지만>.이지만 {
+    border: 0px solid blue;
+    background-color: antiquewhite;
+}
+
+/* 
+> 내 바로 밑의 부하
+띄워쓰기 : 내 부하들 전부 */

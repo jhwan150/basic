@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.효자::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.wrap {
+    margin-top: 100px;
+}
+
+.전체영역 {
+    background-color: gray;
+    width: 1000px;
+    height: 1000px;
+    margin: auto;
+
+}
+
+.전체영역 .일동집안 {
+    padding: 20px;
+}
+
+
+.전체영역 .일동집안 .일동자식 {
+    width: 21.25%;
+    height: 200px;
+    background-color: green;
+    float: left;
+    margin-right: 5%;
+
+}
+
+.전체영역 .일동집안 .일사 {
+    margin-right: 0;
+}
+
+.전체영역2 {
+    width: 900px;
+    height: 340px;
+    background-color: burlywood;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.전체영역2 .이동집안 {
+
+    padding: 10px;
+}
+
+.전체영역2 .이동집안 .이동자식 {
+    width: 21.25%;
+    height: 200px;
+    background-color: green;
+    float: left;
+    margin-right: 5%;
+}
+
+.전체영역2 .이동집안 .사사 {
+    margin-right: 0;
+}
+
+
+.전체영역2 .전체영역3 {
+    margin-bottom: 10px;
+}
+
+.전체영역2 .전체영역3 {
+    width: 880px;
+    height: 100px;
+    background-color: lightgreen;
+    margin: auto;
+}
+
+
+.전체영역2 .전체영역3 .text {
+    text-align: center;
+    padding: 30px;
+}
+
+
+.전체영역4 {
+    margin-top: 50px;
+}
+
+
+.전체영역4 .그린 {
+    float: left;
+}
+
+.전체영역4 .일동 {
+    width: 75%;
+    height: 200px;
+    background-color: green;
+    margin-right: 5%;
+}
+
+.전체영역4 .이동 {
+    width: 20%;
+    height: 200px;
+    background-color: green;
+}

@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sp1 {
+    /* position: static; 기본값. = 얘는 생략해도 된다. */
+
+    top: 10px;
+    width: 400px;
+    height: 50px;
+    background-color: blueviolet;
+    position: relative;
+    z-index: 10;
+    /* z-index: position이 있어야 적용된다. */
+}
+
+.sp2 {
+    width: 400px;
+    height: 50px;
+    background-color: rgb(43, 226, 156);
+    left: 30px;
+    top: -10px;
+    position: relative;
+}
+
+.sp3 {
+    width: 400px;
+    height: 50px;
+    background-color: rgb(238, 40, 5);
+}
+
+.absolute { position: relative;}
+
+.absolute .owner {
+    background-color: lightcoral;
+   
+}
+
+.absolute .owner .pet {
+    width: 400px;
+    height: 50px;
+}
+
+.absolute .owner .ap1 {
+    background-color: lightgreen;
+    position: absolute; left: 10px; top: 10px;
+    /* position: absolute; 부모 할아버지 증조할아버지계열한테 붙는다. 
+       대신 포지션으로 잡아야 함. 아무도 없으면 바디에게 붙음. */
+    z-index: 30;
+}
+
+.absolute .owner .ap2 {
+    background-color: lightgrey;
+}
+
+.absolute .owner2 {
+    background-color: lightsalmon;
+    height: 50px;
+}

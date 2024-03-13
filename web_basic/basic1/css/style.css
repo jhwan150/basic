@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* id를 호출하는 방법= #(?) */
+/* id는 전체 사이트에서 이름이 유일해야한다. (반복하면 안되고 같은 이름이 있으면 안된다.)
+   id가 2개 이상 되면 안된다. ex) id="조상 일번" (x) */
+/* 태그에는 3가지 요소가 있다.
+      1.block = 무조건 부모의 넓이를 차지한다. 공간의 개념이 있음.
+      2.inline = block 요소 안에 글자와 같은 성질을 가지는 요소, 공간의 개념x, 넓이도 변함x
+      3.inline-block = block 요소 안에 글자와 같은 성질, 공간의 개념이 있음.*/
+/* ::after, ::before는 css에서 만드는 가상의 공간이며 inline 성질을 가진다. 
+    content:""; 와 반드시 같이 공존한다. */
+
+/* padding:상하좌우 
+      padding:10px= top bottom left right 모두 10px씩 줄어든다.
+      padding:10px 20px= 위아래10 좌우20  
+      padding:10px 20px 30px= 위10 좌우20 아래30  
+      padding:10px 20px 30px 40px= 위10 우20 아래30 좌40  
+      margin도 위와 동일 */
+/* .약::after {
+        content: "";
+        clear: both;
+        display: block;  부모가 자식을 인식하지 못할 때= 부모의 높이가 0이 될 때
+    } */
+
+.약::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#조상 {}
+
+#조상 .첫째 {
+    background-color: green;
+}
+
+#조상 .둘째 {
+    background-color: darkcyan;
+}
+
+#조상 .둘째::before {
+    content: "🎁";
+    background-color: darkkhaki;
+}
+
+#조상 .둘째::after {
+    content: "🎁";
+}
+
+#조상 .둘째 em {
+    background-color: gold;
+
+}
+
+#조상 .셋째 {
+    background-color: lawngreen;
+    margin-top: 50px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#조상 .셋째 .세일 {
+    background-color: chocolate;
+    width: 300px;
+    float: left;
+}
+
+#조상 .셋째 .세이 {
+    background-color: darkorchid;
+    width: 300px;
+    float: left;
+}
+
+#조상 .셋째 .세삼 {
+    background-color: darkviolet;
+    width: 300px;
+    float: left;
+}
+
+#조상 .넷째 {
+    background-color: brown;
+    width: 1245px;
+    /* margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto; */
+    /* 위 좌우 아래 */
+    margin: 50px auto 0;
+
+}
+
+#조상 .넷째>.child {
+    width: 300px;
+    height: 200px;
+    float: left;
+    margin-right: 15px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 25px;
+    font-weight: bold;
+
+    /* text-align: center; 글자를 가운데로 정렬한다. */
+    /* line-height = 행간을 설정한다.  */
+    /* font-size: 25px; = 글자의 크기(25px), 글자의 기본값은 16px이다. */
+    /* font-weight: bold; =글자의 두께를 설정함(bold 두껍게) */
+}
+
+#조상 .넷째 .네일 {
+    background-color: aqua;
+    background-image: url(../img/Layer1.png);
+}
+
+#조상 .넷째 .네이 {
+    background-color: blueviolet;
+    background-image: url(../img/Layer2.png);
+}
+
+#조상 .넷째 .네삼 {
+    background-color: chocolate;
+    background-image: url(../img/Layer3.png);
+    transition: 0.5s;
+    /* transition= 마우스를 올리면 이미지가 부드럽게 바뀜 */
+}
+
+#조상 .넷째 .네삼:hover{
+     /* #조상 .넷째 .네삼:hover = 마우스를 위에 올리면 밑 링크의 이미지로 바뀜. */
+    background-image: url(../img/Layer4.png);
+}
+#조상 .넷째 .네사 {
+    background-color: coral;
+    background-image: url(../img/Layer4.png);
+    margin-right: 0;
+}
