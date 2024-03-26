@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.main img {
+    width: 100%;
+}
+
+.main .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+
+.main .slick-prev {
+    visibility: hidden;
+    left: 0;
+}
+
+.main .slick-prev::after {
+    content: "\f137";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    font-size: 30px;
+    color: #fff;
+    visibility: visible;
+    position: absolute;
+    left: 0; top: 0;
+}
+
+.main .slick-next {
+    right: 0;
+    visibility: hidden;
+}
+
+.main .slick-next::after {
+    content: "\f138";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    font-size: 30px;
+    color: #fff;
+    visibility: visible;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+.main .slick-dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    display: flex;
+}
+ㄴ
+.main .slick-dots li {
+    margin: 0 5px;
+    width: 13px;
+    height: 13px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.main .slick-dots li button {
+    font-size: 0;
+    visibility: hidden;
+    /* 공간이 사라지는 것이 아니라 단지 안보이게 하는 방법 */
+}
+
+.main .slick-dots li.slick-active {
+    width: 20px;
+    border-radius: 5px;
+}
